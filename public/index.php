@@ -14,9 +14,19 @@ require_once __DIR__ . '/../config/bootstrap.php';
 
 // Application routes
 $app
-    ->get('/', [HomeController::class, 'homepage'])
+    ->map(['GET', 'POST'], '/', [HomeController::class, 'homepage'])
     ->setName('homepage')
 ;
 
+// On peut indiquer des paramètres dans les routes entre accolade : { param }
+// On peut indiquer leur format avec des RegEx: \d+ (constituté d'un ou plusieurs chiffres)
+// Les paramètres seront envoyés en argument de la méthode du controleur
+$app
+    ->get('/download/{id:\d+}', [HomeController::class, 'download'])
+    ->setName('download')
+;
+
 // Start the application
-$app->run();
+$app
+    ->run()
+;
