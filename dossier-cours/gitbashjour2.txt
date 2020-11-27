@@ -1,0 +1,45 @@
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 /
+$ cd '/c/Users/Laurent MG/Desktop/Projet'
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet
+$ cd slim-app
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$ git config --global core.editor nano
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$ git commit
+[master b1ea749] nouveau depot à venir
+ 8 files changed, 109 insertions(+), 1625 deletions(-)
+ delete mode 100644 composer.lock
+ create mode 100644 templates/base.html.twig
+ create mode 100644 templates/home.html.twig
+ delete mode 100644 templates/homepage.html.twig
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$ git remote set-url origin https://github.com/LaurentReveng/share-it.git
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$ git remote -v
+origin  https://github.com/LaurentReveng/share-it.git (fetch)
+origin  https://github.com/LaurentReveng/share-it.git (push)
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 54, done.
+Counting objects: 100% (54/54), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (54/54), 17.28 KiB | 680.00 KiB/s, done.
+Total 54 (delta 17), reused 37 (delta 12), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/LaurentReveng/share-it.git
+ * [new branch]      master -> master
+
+Laurent MG@DESKTOP-GV5IBPN MINGW64 ~/Desktop/Projet/slim-app (master)
+$

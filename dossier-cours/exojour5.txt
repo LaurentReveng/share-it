@@ -1,0 +1,20 @@
+Gestion de la partie téléchargement de fichier:
+
+Sur la route "download":
+Récupérer le fichier en base de données, s'il n'existe pas, rediriger vers la route "file-error".
+Vérifier ensuite que le fichier existe bien dans le dossier "files", sinon rediriger vers la route "file-error".
+Sinon, faire télécharger le fichier par le navigateur, avec son nom original (Utiliser l'objet $response).
+
+Liens utiles:
+Slim - PSR7 (Request Response)
+	https://www.slimframework.com/docs/v4/concepts/value-objects.html
+Slim - Response
+	https://www.slimframework.com/docs/v4/objects/response.html
+
+
+Bonus: implémenter un compteur de téléchargements.
+
+
+Rendu:
+Enregistrer son travail avec Git (commits).
+Envoyer le lien du dépôt GitHub + votre nom à l'adresse: aymericmayeux@evogue.fr
